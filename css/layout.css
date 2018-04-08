@@ -4,6 +4,8 @@ html {
 
 body {
 /* background-color: red; */
+max-width: 1600px;
+
 }
 
 .wrapper {
@@ -23,21 +25,26 @@ body {
 }
 
 .header {
-  background-color: rgba(16, 22, 54, 0.8); /* Должно быть 0.2 */
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  
 }
 
 .header-top {
   width: 100%;
   padding-top: 25px;
   padding-bottom: 20px;
-  height: 70px;
+  height: 30px;
 
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  justify-content: center;
+  
+  background-color: rgba(16, 22, 54, 0.2); /* Должно быть 0.2 */
+  
 
-  justify-content: flex-end;
 }
 
   .header-nav {
@@ -45,9 +52,9 @@ body {
   }
 
   .header-logo__img {
-    width: 100%;
-    height: 70px;
+    width: 90px;
+    /*height: 100px;*/
     background-image: url(../img/logo_alt.svg);
-    background-size: 120px auto;
+    background-size: 90px auto;
     background-repeat: no-repeat;
   }
