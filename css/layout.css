@@ -8,13 +8,14 @@ body {
 
 .wrapper {
   padding: 0 10px;
+  max-width:
 }
 
 /* Header */
 
 .header {
   width: 100%;
-  background-color: rgba(16, 22, 54, 1);
+  background-color: rgba(16, 22, 54, 0.5);
 }
 
 
@@ -40,8 +41,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(16,22, 54, 0.2);
 
-    height: 70px;
+    height: 60px;
 
   }
 
@@ -115,7 +117,7 @@ body {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-
+      justify-content: center;
 
     }
 
@@ -126,12 +128,46 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        background-color: purple;
       }
-
+      .main-gallery-block__2 {
+        display: none;
+      }
 
       .main-gallery-item {
         width: 300px;
         height: 200px;
-        background-image: url(http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg);
-        background-color: purple;
+      }
+
+  .order-form {
+    padding: 10px;
+    background-color: rgba(16,22, 54, 0.9);
+
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .order-form__left-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .order-form__right-side {
+      display: flex;
+      flex-direction: column;
+    }
+
+/* Footer */
+
+  .footer {
+      background-color: #1ea78d;
+  }
+
+    .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+      .footer-wrapper__about {
+        text-align: center;
       }

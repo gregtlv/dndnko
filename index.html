@@ -120,20 +120,20 @@
 
 			<div class="main-gallery-block main-gallery-block__1">
 
-				<div id="gallery__item_1" class="main-gallery-item main-gallery__item_1">1</div>
-				<div id="gallery__item_2" class="main-gallery-item main-gallery__item_2">2</div>
-				<div id="gallery__item_3" class="main-gallery-item main-gallery__item_3">3</div>
-				<div id="gallery__item_4" class="main-gallery-item main-gallery__item_4">4</div>
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_1" class="main-gallery-item main-gallery__item_1">
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_2" class="main-gallery-item main-gallery__item_2">
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_3" class="main-gallery-item main-gallery__item_3">
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_4" class="main-gallery-item main-gallery__item_4">
 
 			</div>
 
 			<!-- Block 2 Hide On Mobile Version -->
 			<div class="main-gallery-block main-gallery-block__2">
 
-				<div class="main-gallery-item main-gallery__item5">5</div>
-				<div class="main-gallery-item main-gallery__item6">6</div>
-				<div class="main-gallery-item main-gallery__item7">7</div>
-				<div class="main-gallery-item main-gallery__item8">8</div>
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item5">
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item6">
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item7">
+				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item8">
 
 			</div>
 
@@ -147,13 +147,17 @@
 		<div class="main-order-form">
 			<!-- Need to connect a javascript file and make ture action-->
 			<form action="" class="order-form">
+				<div class="order-form__left-side">
+					<input type="text" id="orderForm__name" class="order-form__item order-form__name" placeholder="Представьтесь пожалуйста">
+					<!-- For orderForm__phone need to write a pseudo element "+" -->
+					<input type="number" id="orderForm__phone" class="order-form__item order-form__phone">
+					<input type="date" id="orderForm__date" class="order-form__item order-form__date" min="2018-05-01">
+				</div>
+				<div class="order-form__right-side">
 
-				<input type="text" id="orderForm__name" class="order-form__item order-form__name" placeholder="Представьтесь пожалуйста">
-				<!-- For orderForm__phone need to write a pseudo element "+" -->
-				+<input type="number" id="orderForm__phone" class="order-form__item order-form__phone">
-				<input type="date" id="orderForm__date" class="order-form__item order-form__date" min="2018-05-01">
-				<textarea name="userMessage" id="orderForm__text" class="order-form__item order-form__text" cols="30" rows="10" placeholder="Ваши пожелания"></textarea>
-				<button id="orderForm__date" class="order-form__date">Отправить</button>
+					<textarea name="userMessage" id="orderForm__text" class="order-form__item order-form__text" cols="30" rows="10" placeholder="Ваши пожелания"></textarea>
+					<button id="orderForm__date" class="order-form__date">Отправить</button>
+				</div>
 
 			</form>
 		</div>
@@ -182,15 +186,15 @@
 				<ul class="footer-wrapper__social-icons">
 
 					<a href="#Facebook" class="footer-wrapper__social__link footer-wrapper__social__link">
-						<i class="fa-facebook footer-wrapper__social__item"></i>
+
 					</a>
 
 					<a href="#Instagram" class="footer-wrapper__social__link footer-wrapper__social__link">
-						<i class="fa-instagram footer-wrapper__social__item"></i>
+
 					</a>
 
 					<a href="#Twitter" class="footer-wrapper__social__link footer-wrapper__social__link">
-						<i class="fa-twitter footer-wrapper__social__item"></i>
+
 					</a>
 
 				</ul>
@@ -226,14 +230,13 @@
 			<!-- On Mobile version it is #3 Third -->
 
 			<!-- Contact Info Div	-->
-			<div class="footer-wrapper__contacts">
+			<ul class="footer-wrapper__contacts">
 
 				<!-- Font Awesome Icons -->
-				<i class="footer-wrapper__contact__item footer-wrapper__contact__item__1 fa-map-marker"></i>
-				<i class="footer-wrapper__contact__item footer-wrapper__contact__item__2 fa-phone-square"></i>
-				<i class="footer-wrapper__contact__item footer-wrapper__contact__item__3 fa-envelope"></i>
-
-			</div>
+				<i class="fa fa-facebook-square header-content__social-item"></i>
+				<i class="fa fa-instagram header-content__social-item"></i>
+				<i class="fa fa-flickr header-content__social-item"></i>
+			</ul>
 
 			<!-- Bottom of Footer -->
 			<section class="footer-wrapper__bottom">
