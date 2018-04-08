@@ -3,55 +3,135 @@ html {
 }
 
 body {
-/* background-color: red; */
-/* max-width: 1600px; */
 
-}
-
-.header {
-  width: 100%;
-  /* background-color: rgb(16, 22, 54); /* Должно быть 0.2 */ */
 }
 
 .wrapper {
   padding: 0 10px;
 }
 
-.header-wrapper {
-  /* width: auto; */
-  max-width: 1600px;
-  /* min-width: 800px; */
-  height: 800px;
+/* Header */
 
-
-  background-image: url(../img/header_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-
-
-.header-top {
+.header {
   width: 100%;
-  height: 70px;
-  background-color: rgba(16, 22, 54, 0.2); /* Должно быть 0.2 */
+  background-color: rgba(16, 22, 54, 1);
 }
-.header-top-elements {
+
+
+.header-wrapper {
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  background-image: url(../img/header_bg.jpg);
+	color: #fff;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-  .header-nav {
-    display: none;
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+
   }
 
-  .header-logo__img {
-    width: 100px;
-    height: 54px;
-    /*height: 100px;*/
-    background-image: url(../img/logo_100px.svg);
-    background-size: 100px 54px;
-    background-repeat: no-repeat;
+    .header-logo__img {
+
+    }
+
+    .header-nav {
+      display: none;
+    }
+
+    .header-content {
+      text-align: center;
+    }
+
+      .header-content__social-icons {
+        padding: 1em 0;
+
+        display: flex;
+        justify-content: center;
+
+        font-size: 1.5em;
+      }
+
+      .header-content__social-item {
+        margin: 0 5px;
+      }
+
+      .header-content__social-icon__link {
+        text-decoration: none;
+        color: gray;
+      }
+
+/* End Header */
+
+
+/* Main  */
+
+.main {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+  .main-services {
+    margin-top: 1em;
+    display: flex;
+    text-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+    .main-services__list {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+      .main-services__item {
+        padding: 1em;
+      }
+        .main-services__img {
+          width: 4em;
+        }
+
+    .main-gallery {
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+
+    }
+
+      .main-gallery-block {
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+
+      .main-gallery-item {
+        width: 300px;
+        height: 200px;
+        background-image: url(http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg);
+        background-color: purple;
+      }
