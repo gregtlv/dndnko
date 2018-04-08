@@ -3,11 +3,7 @@ html {
 }
 
 body {
-<<<<<<< HEAD
-  color: black;
-=======
-  color: red;
->>>>>>> 4fa88b08a36f018f7842d55fb8001378078c0bd9
+/* background-color: red; */
 }
 
 .wrapper {
@@ -18,11 +14,40 @@ body {
 
 }
 
+.wrapper {
+  padding: 0 10px;
+}
+
 .header-wrapper {
 
 }
 
-.header-top {
-
-
+.header {
+  background-color: rgba(16, 22, 54, 0.8); /* Должно быть 0.2 */
 }
+
+.header-top {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  height: 70px;
+
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  justify-content: flex-end;
+}
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-logo__img {
+    width: 100%;
+    height: 70px;
+    background-image: url(../img/logo_alt.svg);
+    background-size: 120px auto;
+    background-repeat: no-repeat;
+  }
