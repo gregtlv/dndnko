@@ -1,0 +1,101 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Font for Titles and navigtation */
+
+@font-face {
+  src: url("./fonts/Montserrat-Regular.otf");
+  font-family: "Montserrat-Regular";
+  font-weight: 300;
+}
+
+/* Font for content */
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    .header-top__logo {
+      /* width: 100%; */
+      margin-top: 40px;
+      margin-left: 14.4%;
+    }
+
+    .header-top__nav {
+      margin-top: 40px;
+      margin-left: 30%;
+      margin-right: 14.4%;
+
+    }
+      .header-top__nav__items {
+
+      }
+      .header-top__nav__item {
+        font-family: 'Montserrat-Regular', sans-serif;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        /* Доделать в медиазапросах 32px */
+        margin: 0 5px;
+      }
+        .header-top__nav__item:hover {
+          border-bottom: 2px solid #fff;
+        }
+        .header-top__burger {
+          display: none;
+        }
+
+@media screen and (max-width: 1257px) {
+      .header-top__nav {
+        margin-left: 10%;
+      }
+}
+
+@media screen and (max-width: 845px) {
+      .header-top__nav__item {
+      display: none
+      }
+      .header-top__nav .header-top__burger {
+        display: block;
+        color: #fff;
+        font-size: 35px;
+      }
+      .header-top__nav {
+
+      }
+      .header-top__nav.responsive {
+
+      }
+      .header-top__nav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        margin-bottom: 17px;
+      }
+      .header-top__nav__item:hover {
+        border-bottom: 0px solid #fff;
+      }
+      .header-top__nav__item:hover::before {
+        border-bottom: 0px solid #fff;
+        content: '| ';
+      }
