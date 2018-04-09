@@ -4,265 +4,60 @@
 	<title>Dondednko Photography</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/layout.css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"> -->
 </head>
 <body>
 
-	<!-- Header -->
+	<!-- Header  -->
+
 	<header class="header">
-		<section class="header-wrapper">
 
-			<!-- Header Top  -->
-			<div class="header-top wrapper">
-				<!-- <div class="header-logo__img"></div> -->
-				<img src="img/logo_100px.svg" width="100px" alt="">
+	<div class="header-top">
 
-				<i class="fa fa-navicon"></i>
+		<!-- Header Logo -->
+		<img class="header-top__logo" src="./img/logo_100px.svg" alt="Logo">
 
-				<nav class="header-nav">
-					<ul class="header-nav__list">
-						<li class="header-nav__item"><a href="#home" class="header-nav__link">Главная</a></li>
-						<li class="header-nav__item"><a href="#services" class="header-nav__link">Услуги</a></li>
-						<li class="header-nav__item"><a href="#portfolio" class="header-nav__link">Портфолио</a></li>
-						<li class="header-nav__item"><a href="#order" class="header-nav__link">Заказать</a></li>
-					</ul>
-				</nav>
-				<!-- End of heaer top elements -->
-			</div>
-			<!-- End of Header Top -->
+		<!-- Navigation -->
+		<nav id="headerNav" class="header-top__nav">
+				<a href="#" id="headerBurger" class="header-top__burger">&#9776;</a>
+				<a href="#" class="header-top__nav__item">Главная</a>
+				<a href="#" class="header-top__nav__item">Услуги</a>
+				<a href="#" class="header-top__nav__item">О нас</a>
+				<a href="#" class="header-top__nav__item">Портфолио</a>
+				<a href="#" class="header-top__nav__item">Заказать Съемку</a>
+		</nav>
 
-			<!-- Header Content -->
-			<div class="header-content">
+	</div>
 
-				<!-- Header Title -->
-				<h1 class="header-content__title">Welcome to our Photography</h1>
-				<!-- <img class="header-content__img" src="img/icons/header_line.svg" alt="Icon Header Line">  -->
-				<h3 class="header-content__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum possimus neque odit.</h3>
+	<!-- Welcome Text -->
+	<div class="header-content">
 
-				<!-- Social Icons in Header -->
-				<ul class="header-content__social-icons">
-					<a class="header-content__social-icon__link" href="#"><i class="fa fa-facebook-square header-content__social-item"></i></a>
-					<a class="header-content__social-icon__link" href="#"><i class="fa fa-instagram header-content__social-item"></i></a>
-					<a class="header-content__social-icon__link" href="#"><i class="fa fa-flickr header-content__social-item"></i></a>
-				</ul>
+		<h1 class="header-content__title">Фотограф в Киеве</h1>
+		<h3 class="header-content__subtitle">Ваши день запомнится навсегда</h3>
+		<div class="header-content__button">Заказать Съемку</div>
 
-			</div>
-			<!-- End of Header Content -->
-
-		</section>
-		<!-- End of Header Wrapper -->
+	</div>
 
 	</header>
-	<!-- end of Header -->
 
-	<!-- Main -->
-	<main class="main">
+	<!-- End of Header -->
 
-		<!-- Main-Wrapper Section -->
-		<section class="main-wrapper wrapper">
-
-			<div class="main-services">
-
-				<h1 class="main-services__title">Наши Услуги</h1>
-
-				<!-- Services List -->
-				<ul class="main-services__list">
-
-					<!--
-						Main Service need to be First on Mobile View
-						And In Center for Desktop and Tablet Version.
-					-->
-					<li class="main-services__item">
-						<a class="main-services__link" href="#">
-							<img class="main-services__img" src="https://image.flaticon.com/icons/svg/149/149093.svg" alt="Image">
-							<p class="main-services__text">
-								Lorem ipsum dolor sit amet
-							</p>
-						</a>
-					</li>
-
-					<li class="main-services__item">
-						<a class="main-services__link" href="#">
-							<img class="main-services__img" src="https://image.flaticon.com/icons/svg/42/42280.svg" alt="Photo Session">
-							<p class="main-services__text">
-								Lorem ipsum dolor sit amet,
-							</p>
-						</a>
-					</li>
-					<li class="main-services__item">
-						<a class="main-services__link" href="#">
-							<img class="main-services__img" src="https://image.flaticon.com/icons/svg/105/105716.svg" alt="Photo Session">
-							<p class="main-services__text">
-								Lorem ipsum dolor sit amet,
-							</p>
-						</a>
-					</li>
-				</ul>
-				<!-- End of Services List -->
-
-			</div>
-			<!-- End of Main Services Div -->
-
-		</section>
-		<!-- End of Main-Wrapper Section -->
-
-		<!-- Main Gallery Portfolio Section -->
-		<section class="main-gallery">
-
-			<!-- Need 4 in row for desktop, 3 for Tablet or album res, 1 for mobile -->
-
-			<div class="main-gallery-block main-gallery-block__1">
-
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_1" class="main-gallery-item main-gallery__item_1">
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_2" class="main-gallery-item main-gallery__item_2">
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_3" class="main-gallery-item main-gallery__item_3">
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" id="gallery__item_4" class="main-gallery-item main-gallery__item_4">
-
-			</div>
-
-			<!-- Block 2 Hide On Mobile Version -->
-			<div class="main-gallery-block main-gallery-block__2">
-
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item5">
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item6">
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item7">
-				<img src="http://www.universe-galaxies-stars.com/300px-Hopetoun_falls.jpg" class="main-gallery-item main-gallery__item8">
-
-			</div>
-
-		<!-- End of Main Gallery Portfolio Section -->
-		</section>
-
-	<!-- Order a Service Section -->
-	<section class="main-order">
-
-		<!-- It is an Order Form Div -->
-		<div class="main-order-form">
-			<!-- Need to connect a javascript file and make ture action-->
-			<form action="" class="order-form">
-				<div class="order-form__left-side">
-					<input type="text" id="orderForm__name" class="order-form__item order-form__name" placeholder="Представьтесь пожалуйста">
-					<!-- For orderForm__phone need to write a pseudo element "+" -->
-					<input type="number" id="orderForm__phone" class="order-form__item order-form__phone">
-					<input type="date" id="orderForm__date" class="order-form__item order-form__date" min="2018-05-01">
-				</div>
-				<div class="order-form__right-side">
-
-					<textarea name="userMessage" id="orderForm__text" class="order-form__item order-form__text" cols="30" rows="10" placeholder="Ваши пожелания"></textarea>
-					<button id="orderForm__date" class="order-form__date">Отправить</button>
-				</div>
-
-			</form>
-		</div>
-	</section>
-
+	<main>
 
 	</main>
 
-	<!-- Yes It's Footer :-) -->
-	<footer class="footer">
-
-		<!-- Footer Section -->
-		<section class="footer-wrapper">
-
-			<!-- On Mobile version it is #1 First -->
-
-			<!-- Information about Dondenko, Small Text and Social Icons items -->
-			<div class="footer-wrapper__about">
-
-				<h2 class="footer-wrapper__title">Dondenko Photograpy</h2>
-
-				<p class="footer-wrapper__text">Lorem ipsum dolor sit amet, consectetur
-				adipisicing elit. Aut aliquam veniam vitae est, mollitia necessitatibus
-				nulla fuga iure debitis.</p>
-
-				<ul class="footer-wrapper__social-icons">
-
-					<a href="#Facebook" class="footer-wrapper__social__link footer-wrapper__social__link">
-
-					</a>
-
-					<a href="#Instagram" class="footer-wrapper__social__link footer-wrapper__social__link">
-
-					</a>
-
-					<a href="#Twitter" class="footer-wrapper__social__link footer-wrapper__social__link">
-
-					</a>
-
-				</ul>
-
-			</div>
-
-
-			<!-- On Mobile version it is #2 Second -->
-
-			<!-- Instagram Div -->
-
-			<div class="footer-wrapper__instagram">
-
-				<!-- Only For Mobile Device -->
-
-				<div class="footer-wrapper__instagram__1">
-
-						<div class="footer-wrapper__instagram__block"><img src="https://placehold.it/75" alt="Img 1"></div>
-						<div class="footer-wrapper__instagram__block"><img src="https://placehold.it/75" alt="Img 2"></div>
-						<div class="footer-wrapper__instagram__block"><img src="https://placehold.it/75" alt="Img 3"></div>
-				</div>
-
-				<!-- For Desktop Device -->
-
-				<div class="footer-wrapper__instagram footer-wrapper__instagram__2">
-						<div class="footer-wrapper__instagram__block"><img src="https://placehold.it/75" alt="Img 4"></div>
-						<div class="footer-wrapper__instagram__block"><img src="https://placehold.it/75" alt="Img 5"></div>
-						<div class="footer-wrapper__instagram__block"><img src="https://placehold.it/75" alt="Img 6"></div>
-				</div>
-			</div>
-
-
-			<!-- On Mobile version it is #3 Third -->
-
-			<!-- Contact Info Div	-->
-			<ul class="footer-wrapper__contacts">
-
-				<!-- Font Awesome Icons -->
-				<i class="fa fa-facebook-square header-content__social-item"></i>
-				<i class="fa fa-instagram header-content__social-item"></i>
-				<i class="fa fa-flickr header-content__social-item"></i>
-			</ul>
-
-			<!-- Bottom of Footer -->
-			<section class="footer-wrapper__bottom">
-
-				<p>2018 All Right Reserved</p>
-
-				<!-- Footer Navigation On Mobile it is flex-direction: column -->
-				<nav class="footer-nav">
-					<ul class="footer-nav__list">
-
-						<li class="footer-nav__item"><a href="#home" class="header-nav__link">Главная</a></li>
-						<li class="footer-nav__item"><a href="#services" class="header-nav__link">Услуги</a></li>
-						<li class="footer-nav__item"><a href="#portfolio" class="header-nav__link">Портфолио</a></li>
-						<li class="footer-nav__item"><a href="#order" class="header-nav__link">Заказать</a></li>
-
-					</ul>
-				</nav>
-
-			</section>
-			<!-- End of Section Footer-wrapper__bottom -->
-
-		</section>
-		<!-- End of Section Footer Wrapper -->
+	<footer>
 
 	</footer>
-	<!-- End of Footer -->
+
+<script src="./js/script.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 
