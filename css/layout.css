@@ -16,6 +16,7 @@ p {
 }
 hr {
   margin: 30px auto;
+  width: 50px;
   border: none;
   background-color: #000;
   color: #000;
@@ -346,12 +347,12 @@ body {
     }
 
       .main-portfolio__gallery__img {
-        width: 300px;
+        width: 280px;
         /* height: 320px; */
-        padding: 5px;
+        /* padding: 5px; */
       }
       .main-portfolio__gallery__item {
-        width: 300px;
+        width: 280px;
         /* height: 320px; */
         padding: 5px;
 
