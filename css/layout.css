@@ -340,6 +340,11 @@ body {
     }
     .main-portfolio__menu__item {
       margin: 0 15px;
+
+    }
+    .main-portfolio__menu__item:hover {
+      /* border-bottom: 2px solid #c0301c; */
+      color: #c0301c;
     }
 
     .main-portfolio__gallery {
@@ -386,6 +391,13 @@ body {
       background-color: rgba(192, 48, 28, 0.6);
 
     }
+
+    .main-order__title {
+      color: #fff;
+      text-align: center;
+      padding-top: 100px;
+    }
+
     .main_order__form {
       margin-left: 14.4%;
       margin-right: 14.4%;
