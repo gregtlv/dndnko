@@ -24,6 +24,14 @@ hr {
   height: 2px;
 
 }
+
+.pt {
+  padding-top: 100px;
+}
+
+.pb {
+  padding-bottom: 100px;
+}
 /* Font for Titles and navigtation */
 
 @font-face {
@@ -328,10 +336,11 @@ body {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
   }
 
     .main-portfolio__title {
-      padding-top: 100px;
+
     }
 
     .main-portfolio__menu {
@@ -376,12 +385,16 @@ body {
   /* Contact Form Section */
 
     .main-contacts {
+    background-color: #f8f8f8;
+      
+    }
+
+    .contacts-wrapper {
       width: 72%;
       margin: 0 auto;
     }
 
       .main-contacts__title {
-        padding-top: 100px;
         text-align: center;
 
       }
@@ -467,7 +480,6 @@ body {
         }
 
         .contacts-content__right {
-          padding-bottom: 100px;
 
         }
 
@@ -519,7 +531,7 @@ footer {
         display: none;
       }
 
-      .main-contacts {
+      .contacts-wrapper {
   
        width: 94%;
        margin: 0 auto;
@@ -557,6 +569,13 @@ footer {
       }
 
 @media screen and (max-width: 768px) {
+      .pt {
+        padding-top: 50px;
+      }
+
+      .pb {
+        padding-bottom: 50px;
+      }
 
       .main-service {
         justify-content: center;
@@ -591,13 +610,26 @@ footer {
         height: 1px;
   }
     /* About */
+
+    .main-about__text {
+      margin: 0 auto;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 35px;
+    }
+    
+    .main-about__text p {
+      width: 85%;
+      text-align: justify;
+    }
+
     .main-about__image2, .main-about__image4 {
       display: none;
     }
 
     /* Contacts Form */
 
-      .main-contacts {
+      .contacts-wrapper {
       
          width: 94%;
          margin: 0 auto;
