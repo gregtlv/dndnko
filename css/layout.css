@@ -343,6 +343,7 @@ body {
     }
     .main-portfolio__menu__item {
       margin: 0 15px;
+      padding-bottom: 10px;
 
     }
     .main-portfolio__menu__item:hover {
