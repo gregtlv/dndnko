@@ -170,21 +170,58 @@
 
 	<!-- End of Portfolio Section -->
 
-	<!-- Order or Contact form -->
+		</div>
+	</section>
 
-	<!-- <section class="main-order">
-		<div class="main-order__content">
-			<h1 class="main-order__title">Мяу
-			</h1>
-			<!-- <form class="main_order__form" action="#" method="get">
-				<div class="main_order__form_left">
-				<input type="text">
-				<input type="text">
+
+	<!-- Contact Form Section -->
+	<section class="main-contacts">
+
+		<h1 class="main-contacts__title">Заказать фотосъемку</h1>
+
+		<hr width="50px">
+		
+		<h2 class="main-contacts__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+		
+		<div class="main-contacts-content">
+		
+			<div class="contacts-content__left">
+		
+			<ul class="contacts-content__list">
+		
+				<li class="content__list__item">
+					<h2>Адрес</h2>
+				</li>
+				<li class="content__list__item">
+					<h2>Телефон</h2>
+				</li>
+				<li class="content__list__item">
+					<h2>Почта</h2>
+		
+				</li>
+			</ul>
 			</div>
-				<div class="main-order__form__right">
-					<textarea name="name" rows="8" cols="40"></textarea>
-				</div>
-			</form> -->
+
+			<!-- Form -->
+			<div class="contacts-content__right">
+
+				<form class="contacts__form" method="post" action="index.html">
+
+					<div class="contact__form__top">
+						<input placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input">
+						<input placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input">
+						<input placeholder="Почта (по желанию)" id="inputEmail" type="text" class="contact__form__item regular__input">
+						<input placeholder="Выберете дату" id="inputDate" type="date" min="2018-05-01" class="contact__form__item regular__input">
+					</div>
+			
+					<div class="contact__form__bottom">
+						<textarea id="inputText" placeholder="Ваше сообщение" name="Text Input" class="contact__form__item regular__input"></textarea>
+						<button id="sendButton" class="form__button">Отправить</button>
+						<p id="alertMessage" class="alert_message">Заполните поля помеченные красным цветом</p>
+					</div>
+			
+				</form>
+			</div>
 		</div>
 	</section>
 
@@ -207,8 +244,9 @@
 
 	</footer>
 
-<script src="./js/script.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="./js/script.js"></script>
+
 </body>
 
 </script>

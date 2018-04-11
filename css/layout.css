@@ -371,47 +371,103 @@ body {
 
       }
 
-  /* Main Order */
+  /* Contact Form Section */
 
-  .main-order {
-    width: 100%;
-    background-image: url(../img/bg/test.jpg);
-    height: 368px;
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-  }
-
-    .main-order__content {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width: 100%;
-      height: 368px;
-      background-color: rgba(192, 48, 28, 0.6);
-
+    .main-contacts {
+      width: 72%;
+      margin: 0 auto;
     }
 
-    .main-order__title {
-      color: #fff;
-      text-align: center;
-      padding-top: 100px;
-    }
+      .main-contacts__title {
+        padding-top: 100px;
+        text-align: center;
 
-    .main_order__form {
-      margin-left: 14.4%;
-      margin-right: 14.4%;
-      /* margin: 0 auto; */
-      /* text-align: center; */
-      padding-top: 50px;
-      /* color: #fff; */
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+      }
+      .main-contacts__subtitle {
+        padding-bottom: 74px; /* Минус 20px от margin input в form */
+        text-align: center;
+      }
+      
+      .contacts-content__right {
+        margin: 0 auto;
+        /*width: 50.6%;*/
+        max-width: 730px;
+        display: flex;
+        flex-direction: column;
+      }
 
+      .contact__form__top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+
+      /*Form Validation*/
+
+      .red__input {
+        border: 1px solid #c0301c;
+        }
+
+      .regular__input {
+        border: 1px solid #000; 
+      }
+      
+      .contacts__form input, textarea {
+        padding-left: 17px;
+      }
+
+      .contacts__form input {
+        width: 350px;
+        /*min-width: 200px;*/
+        height: 44px;
+        margin-bottom: 22px;
+      }
+
+      .contacts__form textarea {
+        padding-top: 15px;
+        max-width: 730px;
+        height: 104px;
+        margin-bottom: 22px;
+
+      }
+
+      .contacts__form button {
+        /*opacity: 0;*/
+        transition: all 0.5s;
+        width: 170px;
+        height: 45px;
+        background-color: inherit;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+
+      }
+      .contacts__form button:hover {
+        background-color: #c0301c;
+        color: #fff;
+      }
+
+      .alert_message {
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      
+      .contact__form__bottom {
+        display: flex;
+        flex-direction: column;
+      }
+    
+        .contacts-content__left {
+          display: none;
+        }
+
+        .contacts-content__right {
+          padding-bottom: 100px;
+
+        }
 
 
 /* Footer */
@@ -459,6 +515,13 @@ footer {
 @media screen and (max-width: 1208px) {
       .main-portfolio__gallery__item-last {
         display: none;
+      }
+
+      .main-contacts {
+  
+       width: 94%;
+       margin: 0 auto;
+
       }
 }
 
@@ -525,13 +588,65 @@ footer {
         /* Может поменять на 2px */
         height: 1px;
   }
-
     /* About */
-
-
     .main-about__image2, .main-about__image4 {
       display: none;
     }
 
+    /* Contacts Form */
+
+      .main-contacts {
+      
+         width: 94%;
+         margin: 0 auto;
+
+      }
+    }
+@media screen and (max-width: 744px) {
+  
+        .contacts-content__right {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+        }
+        .contacts__form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+        .contact__form__top {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 0 auto;
+          width: 63.5%
+
+        }
+        .contacts__form input {
+          width: 100%;
+        }
+        .contact__form__bottom {
+          margin: auto;
+        }
+
+        .contacts__form textarea {
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 100%;
+          height: 200px;
+        }
+        
+        .form__button {
+          margin: 0 auto;
+        }
+
+        .alert_message {
+          margin: 0 auto;
+        }
+
 
 }
+
+
