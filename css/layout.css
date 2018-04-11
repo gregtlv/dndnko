@@ -5,6 +5,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -166,6 +167,7 @@ body {
         margin: 0 auto;
         font-family: 'Montserrat-Regular', sans-serif;
         text-transform: uppercase;
+        text-align: center;
       }
 
       .main-service__subtitle {
@@ -247,8 +249,8 @@ body {
     }
 
     .main-about__images {
-      margin-left: 14.4%;
-      margin-right: 14.4%;
+      /*! margin-left: 14.4%; */
+      /*! margin-right: 14.4%; */
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -258,6 +260,7 @@ body {
       /* Доделать ширину так чтобы правая картинка не вылезала за текст справа */
       width: 71%;
 
+      margin: 0 auto;
     }
 
     .main-about__image-container {
@@ -281,7 +284,7 @@ body {
       left: 0px;
       top: 0px;
       width: 100%;
-      height: 100%;
+      height: 93%;
       /* background-color: red; */
       background-color: rgba(166, 166, 166, 0.6);
       content: '';
@@ -290,11 +293,10 @@ body {
     .main-about__social-hover {
       opacity: 0;
       transition: all 1s;
-
       display: flex;
       position: absolute;
       left: 60px;
-      bottom: 10px;
+      bottom: 25px;
 
     }
 
@@ -412,11 +414,51 @@ body {
 
 
 
+/* Footer */
 
+footer {
+  background-color: #c0301c;
+  text-align: center;
+}
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    padding-top: 100px;
+  }
+  .footer-social li {
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    }
+    .footer-social li:hover {
+      color: #c0301c;
+      background-color: #fff;
+  }
+    .footer-social i {
+      font-size: 1.6em;
+      }
+
+      .footer-hr {
+        background-color: #fff;
+        color: #fff;
+      }
+  footer p {
+    color: #fff;
+    padding-bottom: 100px;
+  }
 
 @media screen and (max-width: 1257px) {
       .header-top__nav {
         margin-left: 10%;
+      }
+}
+
+@media screen and (max-width: 1208px) {
+      .main-portfolio__gallery__item-last {
+        display: none;
       }
 }
 
@@ -466,7 +508,11 @@ body {
       .main-service__item {
         width: 63.8%;
       }
+      .main-service__item__text {
+        text-align: justify;
+      }
       .main-service__img {
+        /* transition: all 5s; */
         width: 130px;
         height: 130px;
       }
@@ -479,6 +525,13 @@ body {
         /* Может поменять на 2px */
         height: 1px;
   }
+
+    /* About */
+
+
+    .main-about__image2, .main-about__image4 {
+      display: none;
+    }
 
 
 }
