@@ -337,6 +337,7 @@ body {
     .main-portfolio__menu {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding-bottom: 74px;
       margin: 0 auto;
     }
