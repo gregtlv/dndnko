@@ -285,7 +285,7 @@ body {
 
       margin: 0 auto;
     }
-
+    
     .main-about__image-container {
       width: 233px;
       height: 221px;
@@ -299,7 +299,11 @@ body {
       height: 221px;
       border: 0px;
     }
-
+    
+    .main-about__image-container-mob, .main-about__image-mob {
+      display: none;
+    }
+    
     .main-about__image-container::before {
       opacity: 0;
       transition: all 0.5s;
@@ -312,7 +316,7 @@ body {
       background-color: rgba(166, 166, 166, 0.6);
       content: '';
     }
-
+    
     .main-about__social-hover {
       opacity: 0;
       transition: all 1s;
@@ -546,6 +550,13 @@ footer {
       }
 }
 
+@media screen and (max-width: 1310px) {
+      .main-about__image2, .main-about__image4 {
+      display: none;
+    }
+}
+
+
 @media screen and (max-width: 1208px) {
       .main-portfolio__gallery__item-last {
         display: none;
@@ -677,13 +688,16 @@ footer {
     }
     
     .main-about__text p {
-      width: 85%;
+      width: 100%;
       text-align: justify;
     }
 
     .main-about__image2, .main-about__image4 {
       display: none;
     }
+    .main-about__image-container-mob .main-about__image-mob {
+      display: block;
+    } 
 
     /* Contacts Form */
 
