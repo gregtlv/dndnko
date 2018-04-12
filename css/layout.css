@@ -49,6 +49,16 @@ hr {
     transform: scale(1.3);
   }
 }
+@keyframes scaleAnimation_2 {
+  0% {
+    transform: scale(1.0);
+
+  }
+  50% {
+    transform: scale(1.07);
+  }
+}
+
 
 /* Font for content */
 
@@ -204,6 +214,11 @@ body {
 
          .main-service__img {
           margin-bottom: 30px;
+        }
+
+        .main-service__img_2 {
+          animation: scaleAnimation_2 4s infinite;
+
         }
 
         .main-service__item__title {
@@ -420,6 +435,11 @@ body {
 
 
       /*Form Validation*/
+      
+      .contact__form__item {
+        background-color: transparent;
+      }
+
 
       .red__input {
         border: 1px solid #c0301c;
@@ -568,6 +588,42 @@ footer {
         content: '| ';
       }
 
+@media (min-width:320px) {
+  .main-portfolio__gallery {
+    width: 100%
+    display: none;
+  }
+    .main-portfolio__gallery__item, .main-portfolio__gallery__img {
+        width: 100%;
+      }  
+  .gallery__item_mob {
+    display: none;
+   }
+      
+  /*Service Mobile Version*/
+  .main-service__title {
+    font-size: 1.5em;
+  }
+  .main-service__subtitle {
+    font-size: 1em;
+  }
+
+  .main-service__item__text {
+    text-align: center;
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width:821px) {
+      .main-portfolio__gallery {
+        width: 90%;
+      }
+      .main-portfolio__gallery__item, .main-portfolio__gallery__img {
+        width: 220px;
+      }
+}
+
 @media screen and (max-width: 768px) {
       .pt {
         padding-top: 50px;
@@ -579,6 +635,8 @@ footer {
 
       .main-service {
         justify-content: center;
+        margin-left: 5.4%;
+        margin-right: 5.4%;
       }
 
       .main-service-items {
@@ -590,15 +648,15 @@ footer {
 
       }
       .main-service__item {
-        width: 63.8%;
+        width: 89%;
       }
       .main-service__item__text {
         text-align: justify;
       }
       .main-service__img {
         /* transition: all 5s; */
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
       }
       .main-service__hr__line {
         margin: 40px auto;
