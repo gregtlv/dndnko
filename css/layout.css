@@ -22,7 +22,10 @@ hr {
   background-color: #000;
   color: #000;
   height: 2px;
+}
 
+.hr__mob {
+  display: none;
 }
 
 .pt {
@@ -285,7 +288,7 @@ body {
 
       margin: 0 auto;
     }
-    
+
     .main-about__image-container {
       width: 233px;
       height: 221px;
@@ -299,11 +302,11 @@ body {
       height: 221px;
       border: 0px;
     }
-    
+
     .main-about__image-container-mob, .main-about__image-mob {
       display: none;
     }
-    
+
     .main-about__image-container::before {
       opacity: 0;
       transition: all 0.5s;
@@ -316,7 +319,7 @@ body {
       background-color: rgba(166, 166, 166, 0.6);
       content: '';
     }
-    
+
     .main-about__social-hover {
       opacity: 0;
       transition: all 1s;
@@ -405,7 +408,7 @@ body {
 
     .main-contacts {
     background-color: #f8f8f8;
-      
+
     }
 
     .contacts-wrapper {
@@ -421,7 +424,7 @@ body {
         padding-bottom: 74px; /* Минус 20px от margin input в form */
         text-align: center;
       }
-      
+
       .contacts-content__right {
         margin: 0 auto;
         /*width: 50.6%;*/
@@ -439,7 +442,7 @@ body {
 
 
       /*Form Validation*/
-      
+
       .contact__form__item {
         background-color: transparent;
       }
@@ -450,9 +453,9 @@ body {
         }
 
       .regular__input {
-        border: 1px solid #000; 
+        border: 1px solid #000;
       }
-      
+
       .contacts__form input, textarea {
         padding-left: 17px;
       }
@@ -493,12 +496,12 @@ body {
         opacity: 0;
         transition: all 0.5s;
       }
-      
+
       .contact__form__bottom {
         display: flex;
         flex-direction: column;
       }
-    
+
         .contacts-content__left {
           display: none;
         }
@@ -559,15 +562,21 @@ footer {
 
 @media screen and (max-width: 1208px) {
       .main-portfolio__gallery__item-last {
-        display: none;
+        /* display: none; */
       }
 
       .contacts-wrapper {
-  
+
        width: 94%;
        margin: 0 auto;
 
       }
+      .main-portfolio__gallery {
+        width: 90%;
+        /* display: none; */
+      }
+        .main-portfolio__gallery__item, .main-portfolio__gallery__img {
+          }
 }
 
 @media screen and (max-width: 845px) {
@@ -599,18 +608,18 @@ footer {
         content: '| ';
       }
 
-@media (min-width:320px) {
+@media (max-width:320px) {
   .main-portfolio__gallery {
     width: 100%
     display: none;
   }
     .main-portfolio__gallery__item, .main-portfolio__gallery__img {
         width: 100%;
-      }  
+      }
   .gallery__item_mob {
     display: none;
    }
-      
+
   /*Service Mobile Version*/
   .main-service__title {
     font-size: 1.5em;
@@ -672,7 +681,7 @@ footer {
       .main-service__hr__line {
         margin: 40px auto;
 
-        display: block;
+        display: none;
         background-color: #727272;
         color: #000;
         /* Может поменять на 2px */
@@ -686,30 +695,40 @@ footer {
       flex-direction: column;
       padding-bottom: 35px;
     }
-    
+
     .main-about__text p {
       width: 100%;
       text-align: justify;
     }
+    .main-about__image3 {
+      margin: 0 auto;
+      margin-top: 1em;
 
-    .main-about__image2, .main-about__image4 {
+    }
+
+    .main-about__image1, .main-about__image2, .main-about__image4 {
       display: none;
     }
-    .main-about__image-container-mob .main-about__image-mob {
+    .main-about__image-container-mob, .main-about__image-mob {
       display: block;
-    } 
+    }
+    .main-about__image-container-mob {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
 
     /* Contacts Form */
 
       .contacts-wrapper {
-      
+
          width: 94%;
          margin: 0 auto;
 
       }
     }
 @media screen and (max-width: 744px) {
-  
+
         .contacts-content__right {
           margin: 0 auto;
           display: flex;
@@ -743,7 +762,7 @@ footer {
           width: 100%;
           height: 200px;
         }
-        
+
         .form__button {
           margin: 0 auto;
         }
@@ -754,5 +773,3 @@ footer {
 
 
 }
-
-
