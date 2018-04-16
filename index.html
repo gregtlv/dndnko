@@ -7,7 +7,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/layout.css">
@@ -26,12 +26,12 @@
 
 		<!-- Navigation -->
 		<nav id="headerNav" class="header-top__nav">
-				<a href="#" id="headerBurger" class="header-top__burger">&#9776;</a>
+				<span href="#" id="headerBurger" class="header-top__burger">&#9776;</span>
 				<a href="#" class="header-top__nav__item">Главная</a>
-				<a href="#" class="header-top__nav__item">Услуги</a>
-				<a href="#" class="header-top__nav__item">О нас</a>
-				<a href="#" class="header-top__nav__item">Портфолио</a>
-				<a href="#" class="header-top__nav__item">Заказать Съемку</a>
+				<a href="#sectionService" class="header-top__nav__item">Услуги</a>
+				<a href="#sectionAbout" class="header-top__nav__item">О нас</a>
+				<a href="#sectionPortfolio" class="header-top__nav__item">Портфолио</a>
+				<a href="#sectionForm" class="header-top__nav__item">Заказать Съемку</a>
 		</nav>
 
 	</div>
@@ -39,8 +39,8 @@
 	<!-- Welcome Text -->
 	<div class="header-content">
 
-		<h1 class="header-content__title">Фотограф в Киеве</h1>
-		<h3 class="header-content__subtitle">Lorem ipsum dolor sit.</h3>
+		 <h1 class="header-content__title">V&K Dondenko</h1> <!-- Фотограф в Киеве -->
+		<h3 class="header-content__subtitle">Молодая и креативная пара <br>семейных фотографов из Киева</h3>
 		<a href="#">
 		<div class="header-content__button">
 			<p>Заказать Съемку</p>
@@ -54,7 +54,7 @@
 	<!-- End of Header -->
 
 	<main class="main">
-		<section class="main-service">
+		<section id="sectionService" class="main-service">
 			<h1 class="main-service__title">Наши услуги</h1>
 			<hr width="50px">
 			<!-- <img class="main-service__line" src="./img/service_line.jpg" alt="Line"> -->
@@ -87,7 +87,7 @@
 		</section>
 		<!-- End of Service Section -->
 
-		<section class="main-about">
+		<section id="sectionAbout" class="main-about">
 			<h1 class="main-about__title">
 				О нас
 			</h1>
@@ -156,7 +156,7 @@
 
 	<!-- Portfolio Section -->
 
-		<section class="main-portfolio">
+		<section id="sectionPortfolio" class="main-portfolio">
 
 			<h1 class="main-portfolio__title pt">Наши работы</h1>
 			<hr width="50px">
@@ -188,7 +188,7 @@
 
 
 	<!-- Contact Form Section -->
-	<section class="main-contacts">
+	<section id="sectionForm" class="main-contacts">
 		<div class="contacts-wrapper">
 		<h1 class="main-contacts__title pt">Заказать фотосъемку</h1>
 

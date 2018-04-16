@@ -1,11 +1,11 @@
-// Greg 
+// Greg
 
 headerBurger.onclick = function expandMenu() {
   var headerNav = document.getElementById('headerNav');
 
   let headerNavClass = headerNav.classList;
 
-  console.log(headerNavClass);
+  // console.log(headerNavClass);
 
 
   if (headerNav.className === "header-top__nav") {
@@ -14,11 +14,36 @@ headerBurger.onclick = function expandMenu() {
     headerNavClass.remove("responsive");
   }
 
-  console.log(headerNavClass);
+  // console.log(headerNavClass);
 
 }
 
-sendButton.onclick = function sendForm(event) { //event важная вещь для Firefox 
+// Scroll
+
+
+$(document).ready(function(){
+ $("#headerNav").on("click","a", function (event) {
+   //отменяем стандартную обработку нажатия по ссылке
+   event.preventDefault();
+
+   //забираем идентификатор бока с атрибута href
+   var id  = $(this).attr('href'),
+
+   //узнаем высоту от начала страницы до блока на который ссылается якорь
+     top = $(id).offset().top;
+
+   //анимируем переход на расстояние - top за 1500 мс
+   $('body,html').animate({scrollTop: top}, 1500);
+ });
+});
+
+
+// End Scroll
+
+
+// Form Validation
+
+sendButton.onclick = function sendForm(event) { //event важная вещь для Firefox
 
 	event.preventDefault();
 
@@ -76,7 +101,7 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 	}
 
 
-	
+
 	if (userDate.value == "") {
 		userDate_Class.remove("regular__input");
 		userDate_Class.add("red__input");
@@ -115,7 +140,9 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 		alert("Форма отправки пока что не подключена");
 	} else {
 		alertMessage.style.opacity = "1";
-			
+
 	}
 
 }
+
+// end of form validation
