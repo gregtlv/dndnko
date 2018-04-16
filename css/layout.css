@@ -609,19 +609,26 @@ footer {
         display: block;
         text-align: right;
         /* margin-bottom: 17px; */
+        margin-bottom: 4px;
       }
       .header-top__nav__item {
-        border: 1px solid #fff;
+        border: 1px solid rgba(0,0,0, 0);
         padding: 1em 1.4em;
         /* font-size: 1em; */
-        background-color: rgba(192, 48, 28, 0.9);
+        background-color: rgba(192, 48, 28, 0.85);
       }
       .header-top__nav__item:hover {
-        border-bottom: 1px solid #f8f8f8;
+        border-bottom: 1px solid rgba(0,0,0, 0);
+        background-color: rgba(192, 48, 28, 1);
+        transition: all 0.5s;
       }
+      .header-top__nav__item:out-of-range {
+        background-color: green;
+
+      }
+
       .header-top__nav__item:hover::before {
-        /* border-bottom: 0px solid #fff;
-        content: '| '; */
+
       }
 
 @media (max-width:320px) {
