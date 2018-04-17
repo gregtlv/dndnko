@@ -569,22 +569,9 @@ footer {
 
 
 @media screen and (max-width: 1208px) {
-      .main-portfolio__gallery__item-last {
-        /* display: none; */
-      }
 
-      .contacts-wrapper {
-
-       width: 94%;
-       margin: 0 auto;
-
-      }
-      .main-portfolio__gallery {
-        width: 90%;
-        /* display: none; */
-      }
-        .main-portfolio__gallery__item, .main-portfolio__gallery__img {
-          }
+.main-portfolio__gallery__item-last {
+  display: none;
 }
 
 @media screen and (max-width: 845px) {
