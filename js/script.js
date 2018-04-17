@@ -150,6 +150,9 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 // Gallery
 
 
+
+
+
   // Get the modal
   var modal = document.getElementById('myModal');
 

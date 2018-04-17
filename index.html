@@ -14,7 +14,8 @@
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"> -->
 
 	<!-- Portfolio Gallery -->
-	<link rel="stylesheet" href="./css/gallery.css">
+	<link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -175,144 +176,40 @@
 			<!-- portfolio__gallery -->
 
 			<div class="main-portfolio__gallery">
-
-			<!-- galleryItem  1 -->
-				<div class="main-portfolio__gallery__item" id="galleryItem">
-
-					<img id="myImg" class="main-portfolio__gallery__img" src="./img/portfolio/3.jpg" alt="Девочка">
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-
-					  <!-- The Close Button -->
-					  <span class="close">&times;</span>
-
-					  <!-- Modal Content (The Image) -->
-					  <img class="modal-content" id="img01">
-
-					  <!-- Modal Caption (Image Text) -->
-					  <div id="caption">
-					  </div>
-					</div>
-
-				</div>
-				<!-- end galleryItem -->
-
-				<!-- galleryItem 2 -->
-
-					<div class="main-portfolio__gallery__item" id="galleryItem">
-
-						<img id="myImg" class="main-portfolio__gallery__img" src="./img/portfolio/1.jpg" alt="Девочка">
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">
-							</div>
-						</div>
-
-					</div>
-					<!-- end galleryItem -->
-
-					<!-- galleryItem 3 -->
-
-						<div class="main-portfolio__gallery__item" id="galleryItem">
-
-							<img id="myImg" class="main-portfolio__gallery__img" src="./img/portfolio/1.jpg" alt="Девочка">
-							<!-- The Modal -->
-							<div id="myModal" class="modal">
-
-								<!-- The Close Button -->
-								<span class="close">&times;</span>
-
-								<!-- Modal Content (The Image) -->
-								<img class="modal-content" id="img01">
-
-								<!-- Modal Caption (Image Text) -->
-								<div id="caption">
-								</div>
-							</div>
-
-						</div>
-						<!-- end galleryItem -->
-
-						<!-- galleryItem 4 -->
-
-							<div class="main-portfolio__gallery__item" id="galleryItem">
-
-								<img id="myImg" class="main-portfolio__gallery__img" src="./img/portfolio/1.jpg" alt="Девочка">
-								<!-- The Modal -->
-								<div id="myModal" class="modal">
-
-									<!-- The Close Button -->
-									<span class="close">&times;</span>
-
-									<!-- Modal Content (The Image) -->
-									<img class="modal-content" id="img01">
-
-									<!-- Modal Caption (Image Text) -->
-									<div id="caption">
-									</div>
-								</div>
-
-							</div>
-							<!-- end galleryItem -->
-
-						<!-- galleryItem 5 -->
-
-							<div class="main-portfolio__gallery__item" id="galleryItem">
-
-								<img id="myImg" class="main-portfolio__gallery__img" src="./img/portfolio/1.jpg" alt="Девочка">
-								<!-- The Modal -->
-								<div id="myModal" class="modal">
-
-									<!-- The Close Button -->
-									<span class="close">&times;</span>
-
-									<!-- Modal Content (The Image) -->
-									<img class="modal-content" id="img01">
-
-									<!-- Modal Caption (Image Text) -->
-									<div id="caption">
-									</div>
-								</div>
-
-							</div>
-							<!-- end galleryItem -->
-							<!-- galleryItem 4 -->
-
-								<div class="main-portfolio__gallery__item" id="galleryItem">
-
-									<img id="myImg" class="main-portfolio__gallery__img" src="./img/portfolio/1.jpg" alt="Девочка">
-									<!-- The Modal -->
-									<div id="myModal" class="modal">
-
-										<!-- The Close Button -->
-										<span class="close">&times;</span>
-
-										<!-- Modal Content (The Image) -->
-										<img class="modal-content" id="img01">
-
-										<!-- Modal Caption (Image Text) -->
-										<div id="caption">
-										</div>
-									</div>
-
-								</div>
-								<!-- end galleryItem -->
-
-			<!-- end of portfolio__gallery -->
-
-		</section>
-
-	<!-- End of Portfolio Section -->
-
-		</div>
+				<ul id="lightgallery" class="portfolio__gallery">
+						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/1-375.jpg 375, ./img/portfolio/1-480.jpg 480, ./img/portfolio/1.jpg 800" data-src="./img/portfolio/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+								<a href="">
+										<img class="img-responsive" src="./img/portfolio/thumb-1.jpg" alt="Thumb-1">
+								</a>
+						</li>
+						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/2-375.jpg 375, ./img/portfolio/2-480.jpg 480, ./img/portfolio/2.jpg 800" data-src="./img/portfolio/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+								<a href="">
+										<img class="img-responsive" src="./img/portfolio/thumb-2.jpg" alt="Thumb-2">
+								</a>
+						</li>
+						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/13-375.jpg 375, ./img/portfolio/13-480.jpg 480, ./img/portfolio/13.jpg 800" data-src="./img/portfolio/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+								<a href="">
+										<img class="img-responsive" src="./img/portfolio/thumb-13.jpg" alt="Thumb-3">
+								</a>
+						</li>
+						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/4-375.jpg 375, ./img/portfolio/4-480.jpg 480, ./img/portfolio/4.jpg 800" data-src="./img/portfolio/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+								<a href="">
+										<img class="img-responsive" src="./img/portfolio/thumb-4.jpg" alt="Thumb-4">
+								</a>
+						</li>
+				</ul>
+			</div>
+			<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+        <script>
+            lightGallery(document.getElementById('lightgallery'));
+        </script>
 	</section>
 
 
@@ -347,13 +244,13 @@
 			<!-- Form -->
 			<div class="contacts-content__right pb">
 
-				<form class="contacts__form" method="post" >
+				<form class="contacts__form" method="post" action="./send.php">
 
 					<div class="contact__form__top">
-						<input placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input">
-						<input placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input">
-						<input placeholder="Почта (по желанию)" id="inputEmail" type="text" class="contact__form__item regular__input">
-						<input placeholder="Выберете дату" id="inputDate" type="date" min="2018-05-01" class="contact__form__item regular__input">
+						<input name="Name" placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input">
+						<input name="Number" placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input">
+						<input name="Email" placeholder="Почта (по желанию)" id="inputEmail" type="text" class="contact__form__item regular__input">
+						<input name="Date" placeholder="Выберете дату" id="inputDate" type="date" min="2018-05-01" class="contact__form__item regular__input">
 					</div>
 
 					<div class="contact__form__bottom">
@@ -392,7 +289,7 @@
 
 	</footer>
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':50675/livereload.js?snipver=1"></' + 'script>')</script>
 <script src="./js/script.js"></script>
 
 </body>
