@@ -413,7 +413,7 @@ body {
           border-radius: 7px;
           opacity: 0.9;
           transition: opacity 0.3s;
-          width: 90%; 
+          width: 95%; 
         }
 
         .portfolio__gallery__item:hover img {
