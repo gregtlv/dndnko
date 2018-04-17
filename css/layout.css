@@ -396,15 +396,16 @@ body {
 
     .main-portfolio__gallery {
       margin: 0 auto;
-      width: 70%;
+      width: 85%;
     }
       .portfolio__gallery {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
       }
 
         .portfolio__gallery__item {
+          margin: 0.3em;
 
         }
 
