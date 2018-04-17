@@ -646,7 +646,10 @@ footer {
 
   .main-portfolio__gallery {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+  }
+  .portfolio__gallery {
+    /* width:  */
   }
 }
   /* end of portfolio__gallery */
