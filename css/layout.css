@@ -363,7 +363,7 @@ body {
   /* Доделать Портфолио по ширине вместе со всеми эллементами.
   Картинки из портфолио должны быть в ровень с картинками наверху. */
   .main-portfolio {
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 70px;
@@ -648,6 +648,18 @@ footer {
     font-size: 1em;
   }
 
+  .main-portfolio__gallery {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .portfolio__gallery {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .portfolio__gallery img {
+    border-radius: 4px;
+    width: 99%;
+  }
 }
 
 
