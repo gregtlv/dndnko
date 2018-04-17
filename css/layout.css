@@ -366,11 +366,12 @@ body {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 70px;
 
   }
 
     .main-portfolio__title {
-
+      padding-top: 70px;
     }
 
     .main-portfolio__menu {
@@ -396,9 +397,10 @@ body {
 
     .main-portfolio__gallery {
       margin: 0 auto;
-      width: 85%;
+      width: 100%;
     }
       .portfolio__gallery {
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -650,6 +652,9 @@ footer {
   }
   .portfolio__gallery {
     /* width:  */
+  }
+  .portfolio__gallery:last-child {
+    /* display: none; */
   }
 }
   /* end of portfolio__gallery */
