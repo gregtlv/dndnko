@@ -281,13 +281,13 @@ body {
     .main-about__content__row-1, 
     .main-about__content__row-2  {
       display: flex; 
-      /*margin: 0 auto;*/
       justify-content: space-between;
     }
 
     .main-about__content__row-1 p {
       width: 45%;
       text-align: left;
+      margin-bottom: 1.5em;
     }
       /*##################*/
 
@@ -297,10 +297,18 @@ body {
       position: relative;
     }
     .main-about__content__ksuha {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+      display: flex;
+      flex-direction: row;
+      position: relative;
     }
+    .main-about__content__ksuha__mob {
+      display: none;
+      margin-bottom: 1.5em;
+    }
+
+    .main-about__content__row-2 img {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+      }
       .vasya__info, 
       .ksuha__info {
           position: absolute;
@@ -332,8 +340,7 @@ body {
         }
           .ksuha__info  li:hover i {
             color: red;
-          }
-        
+          }      
 
       /*##################*/
 
@@ -341,10 +348,12 @@ body {
       flex-basis: 90%;
     }    
     .main-about__content__img img {
-      width: 90%;
+      /*width: 0%;*/
+      height: auto;
       border-radius: 4px;
       position: relative;
     }
+
   /* End of About */
 
   /* Portfolio Section */
@@ -401,6 +410,8 @@ body {
           opacity: 0.9;
           transition: opacity 0.3s;
           width: 100%;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+
         }
 
         .portfolio__gallery__item:hover img {
@@ -627,8 +638,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-  /* Portfolio Gallery  */
+ 
+ /* Portfolio Gallery  */
 
   .main-portfolio__gallery {
     margin: 0 auto;
@@ -706,7 +717,20 @@ footer {
   }
     /* About */
 
+    .main-about__content__row-1 {
+      flex-direction: column;
+    }
 
+      .main-about__content__row-1 p {
+        width: 100%;
+      }
+    .main-about__content__ksuha {
+      display: none;
+    }
+       .main-about__content__ksuha__mob {
+      display: block;
+    }
+      
 
     /* Contacts Form */
 
@@ -716,6 +740,8 @@ footer {
          margin: 0 auto;
 
       }
+       
+
     }
 
 @media screen and (max-width: 744px) {
