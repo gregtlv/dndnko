@@ -755,6 +755,8 @@ footer {
 
       .main-about__content__vasya__mob {
         display: block;
+        margin: 0 auto;
+        
         /*opacity: 0.5;*/
       }
       .main-about__content__vasya {
