@@ -348,7 +348,7 @@ body {
       flex-basis: 90%;
     }    
     .main-about__content__img img {
-      /*width: 0%;*/
+      /*width: 100%;*/
       height: auto;
       border-radius: 4px;
       position: relative;
