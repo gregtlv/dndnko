@@ -173,8 +173,6 @@ body {
 /* Main */
 
   .main {
-/*margin-top:
-Понять что за хуйня с белой полосой*/
     margin-top: -21px;
     width: 100%;
     background: #fff;
@@ -258,7 +256,7 @@ body {
     background-color: #f8f8f8;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 
   }
     .main-about__title {
@@ -271,10 +269,7 @@ body {
     .main-about__content {
       width: 72%;
       margin: 0 auto;
-      display: flex;
-      
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+      display: flex;      
       flex-direction: column;
     }
 
@@ -305,9 +300,14 @@ body {
       display: none;
       margin-bottom: 1.5em;
     }
-
+    .main-about__content__ksuha__mob img {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+        opacity: 0.8;
+      
+    }  
     .main-about__content__row-2 img {
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+        opacity: 0.8;
       }
       .vasya__info, 
       .ksuha__info {
@@ -345,10 +345,10 @@ body {
       /*##################*/
 
     .main-about__content__img {
-      flex-basis: 90%;
+      width: 90%;
     }    
     .main-about__content__img img {
-      /*width: 100%;*/
+      width: 80%;
       height: auto;
       border-radius: 4px;
       position: relative;
@@ -720,18 +720,26 @@ footer {
     .main-about__content__row-1 {
       flex-direction: column;
     }
-
       .main-about__content__row-1 p {
         width: 100%;
+        text-align: justify;
       }
-    .main-about__content__ksuha {
-      display: none;
-    }
-       .main-about__content__ksuha__mob {
-      display: block;
-    }
-      
+      .main-about__content__ksuha {
+        display: none;
+      }
+      .main-about__content__ksuha__mob  {
+        /*width: 10%;*/
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        display: block;
+      }
 
+      .main-about__content__vasya {
+        margin: 0 auto;
+        justify-content: center;
+      }
+    
+ 
     /* Contacts Form */
 
       .contacts-wrapper {
