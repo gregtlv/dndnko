@@ -269,28 +269,86 @@ body {
 
 
     .main-about__content {
+      width: 72%;
       margin: 0 auto;
       display: flex;
+      
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      align-items: center;
-      align-content: center;
-    }
-    .main-about__content__row-1 p {
-      /* display: flex; */
-      justify-content: center;
-    }
-    .main-about__content__row-2 {
-      display: flex;
     }
 
+    .main-about__content__row-1, 
+    .main-about__content__row-2  {
+      display: flex; 
+      /*margin: 0 auto;*/
+      justify-content: space-between;
+    }
+
+    .main-about__content__row-1 p {
+      width: 45%;
+      text-align: left;
+    }
+      /*##################*/
+
+    .main-about__content__vasya {
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+    }
+    .main-about__content__ksuha {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    }
+      .vasya__info, 
+      .ksuha__info {
+          position: absolute;
+          /*left: 10%;*/
+          bottom: 0px;
+          width: 90%;
+          min-height: 15%;
+          padding: 1% 0;
+          background-color: rgba(0,0,0, 0.3); 
+          border-radius: 5px;
+          color: #fff;
+      
+          display: none;
+          /*opacity: 0;*/
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+          -ms-align-items: center;
+          align-items: center;
+      }
+        .vasya__info, .ksuha__info i {
+          font-size:180%;
+          color: #f8f8f8;
+          opacity: 0.8;
+        }
+          .main-about__content__row-2 a {
+          padding: 0.5em;
+          margin: 0.5em;
+        }
+          .ksuha__info  li:hover i {
+            color: red;
+          }
+        
+
+      /*##################*/
+
+    .main-about__content__img {
+      flex-basis: 90%;
+    }    
+    .main-about__content__img img {
+      width: 90%;
+      border-radius: 4px;
+      position: relative;
+    }
   /* End of About */
 
   /* Portfolio Section */
 
-  /* Доделать Портфолио по ширине вместе со всеми эллементами.
-  Картинки из портфолио должны быть в ровень с картинками наверху. */
   .main-portfolio {
     width: 98%;
     margin: 0 auto;
