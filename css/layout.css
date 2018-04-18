@@ -300,6 +300,16 @@ body {
       display: none;
       margin-bottom: 1.5em;
     }
+
+    .main-about__content__vasya__mob {
+      display: none;
+    }
+
+    .main-about__content__vasya__mob img {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+        opacity: 0.8;
+      
+    }
     .main-about__content__ksuha__mob img {
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
         opacity: 0.8;
@@ -717,6 +727,10 @@ footer {
   }
     /* About */
 
+    .main-about__content {
+      width: 90%;
+    }
+
     .main-about__content__row-1 {
       flex-direction: column;
     }
@@ -733,8 +747,18 @@ footer {
         margin-bottom: 1.5em;
         display: block;
       }
+      .main-about__content__row-2 {
+        /*width: 100%;*/
+        justify-content: center;
+        display: none;
+      }
 
+      .main-about__content__vasya__mob {
+        display: block;
+        /*opacity: 0.5;*/
+      }
       .main-about__content__vasya {
+        /*width: 100%;*/
         margin: 0 auto;
         justify-content: center;
       }
