@@ -125,7 +125,14 @@ body {
           text-align: right;
           margin-bottom: 10px;
         }
-
+  .social_header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social_header li {
+    font-size: 1.5em;
+    padding: 15px;
+  }
   .header-content {
     position: static;
     /* margin-top: 5%; */
