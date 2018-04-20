@@ -862,7 +862,7 @@ footer {
         }
         .contact__form__bottom {
           margin: auto;
-          width: 63.5%;
+          width: 100%;
         }
 
         .contacts__form textarea {
