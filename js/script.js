@@ -136,9 +136,23 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 	if (userName.value != "" && userNumber.value != "" && userMail.value != "" && userDate.value != "" && userText.value != "") {
 		// form.style.display = "none";
 		// classNamesForm.remove("form");
-		console.log('Form sent');
 
-		alert("Форма отправки пока что не подключена");
+
+        console.log('Form sent');
+
+        $(function() {
+        $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+        $("#form").trigger("reset");
+      });
+      return false;
+    });
+
 	} else {
 		alertMessage.style.opacity = "1";
 
@@ -146,6 +160,3 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 
 }
 // end of form validation
-
-
-// Gallery

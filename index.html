@@ -7,7 +7,6 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/layout.css">
@@ -18,274 +17,272 @@
 
 
 </head>
-<body>
+<!-- Header  -->
 
-	<!-- Header  -->
+<header class="header">
 
-	<header class="header">
+<div class="header-top">
 
-	<div class="header-top">
+	<!-- Header Logo -->
+	<img class="header-top__logo" src="./img/logo_100px.svg" alt="Logo">
 
-		<!-- Header Logo -->
-		<img class="header-top__logo" src="./img/logo_100px.svg" alt="Logo">
+	<!-- Navigation -->
+	<nav id="headerNav" class="header-top__nav">
+			<span href="#" id="headerBurger" class="header-top__burger">&#9776;</span>
+			<a href="#" class="header-top__nav__item">Главная</a>
+			<a href="#sectionService" class="header-top__nav__item">Услуги</a>
+			<a href="#sectionAbout" class="header-top__nav__item">О нас</a>
+			<a href="#sectionPortfolio" class="header-top__nav__item">Портфолио</a>
+			<a href="#sectionForm" class="header-top__nav__item">Заказать Съемку</a>
+	</nav>
 
-		<!-- Navigation -->
-		<nav id="headerNav" class="header-top__nav">
-				<span href="#" id="headerBurger" class="header-top__burger">&#9776;</span>
-				<a href="#" class="header-top__nav__item">Главная</a>
-				<a href="#sectionService" class="header-top__nav__item">Услуги</a>
-				<a href="#sectionAbout" class="header-top__nav__item">О нас</a>
-				<a href="#sectionPortfolio" class="header-top__nav__item">Портфолио</a>
-				<a href="#sectionForm" class="header-top__nav__item">Заказать Съемку</a>
-		</nav>
+</div>
 
+<!-- Welcome Text -->
+<div class="header-content">
+
+	 <h1 class="header-content__title">V&K Dondenko</h1> <!-- Фотограф в Киеве -->
+	<h3 class="header-content__subtitle">Молодая и креативная пара <br>семейных фотографов из Киева</h3>
+	<a href="#">
+	<div class="header-content__button">
+		<p>Заказать Съемку</p>
 	</div>
+	</a>
 
-	<!-- Welcome Text -->
-	<div class="header-content">
+</div>
 
-		 <h1 class="header-content__title">V&K Dondenko</h1> <!-- Фотограф в Киеве -->
-		<h3 class="header-content__subtitle">Молодая и креативная пара <br>семейных фотографов из Киева</h3>
-		<a href="#">
-		<div class="header-content__button">
-			<p>Заказать Съемку</p>
-		</div>
-		</a>
+</header>
 
-	</div>
+<!-- End of Header -->
 
-	</header>
+<main class="main">
+	<section id="sectionService" class="main-service">
+		<h1 class="main-service__title">Наши услуги</h1>
+		<hr width="50px">
+		<!-- <img class="main-service__line" src="./img/service_line.jpg" alt="Line"> -->
+		<h2 class="main-service__subtitle">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ipsa, sed.
+		</h2>
+		<ul class="main-service-items">
 
-	<!-- End of Header -->
+			<li class="main-service__item">
+				<img src="./img/icons/icon1.svg" alt="Service1" class="main-service__img">
+				<h3 class="main-service__item__title">Lorem ipsum dolor.</h3>
+				<p class="main-service__item__text">Lorem ipsum dolor sit amet, consectet adipisicing elit. Minima maxime quam architecto </p>
+			</li>
+			<hr width="50px" class="main-service__hr__line">
+			<li class="main-service__item">
+				<img src="./img/icons/icon2.svg" alt="Service2" class="main-service__img_2 main-service__img">
+				<h3 class="main-service__item__title">Lorem ipsum dolor.</h3>
+				<p class="main-service__item__text">Lorem ipsum dolor sit amet, consectet adipisicing elit. Minima maxime quam architecto </p>
+			</li>
+			<hr width="50px" class="main-service__hr__line">
 
-	<main class="main">
-		<section id="sectionService" class="main-service">
-			<h1 class="main-service__title">Наши услуги</h1>
-			<hr width="50px">
-			<!-- <img class="main-service__line" src="./img/service_line.jpg" alt="Line"> -->
-			<h2 class="main-service__subtitle">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ipsa, sed.
-			</h2>
-			<ul class="main-service-items">
+			<li class="main-service__item">
+				<img src="./img/icons/icon3.svg" alt="Service3" class="main-service__img">
+				<h3 class="main-service__item__title">Lorem ipsum dolor.</h3>
+				<p class="main-service__item__text">Lorem ipsum dolor sit amet, consectet adipisicing elit. Minima maxime quam architecto </p>
+			</li>
 
-				<li class="main-service__item">
-					<img src="./img/icons/icon1.svg" alt="Service1" class="main-service__img">
-					<h3 class="main-service__item__title">Lorem ipsum dolor.</h3>
-					<p class="main-service__item__text">Lorem ipsum dolor sit amet, consectet adipisicing elit. Minima maxime quam architecto </p>
-				</li>
-				<hr width="50px" class="main-service__hr__line">
-				<li class="main-service__item">
-					<img src="./img/icons/icon2.svg" alt="Service2" class="main-service__img_2 main-service__img">
-					<h3 class="main-service__item__title">Lorem ipsum dolor.</h3>
-					<p class="main-service__item__text">Lorem ipsum dolor sit amet, consectet adipisicing elit. Minima maxime quam architecto </p>
-				</li>
-				<hr width="50px" class="main-service__hr__line">
+		</ul>
 
-				<li class="main-service__item">
-					<img src="./img/icons/icon3.svg" alt="Service3" class="main-service__img">
-					<h3 class="main-service__item__title">Lorem ipsum dolor.</h3>
-					<p class="main-service__item__text">Lorem ipsum dolor sit amet, consectet adipisicing elit. Minima maxime quam architecto </p>
-				</li>
+	</section>
+	<!-- End of Service Section -->
 
-			</ul>
+	<section id="sectionAbout" class="main-about">
 
-		</section>
-		<!-- End of Service Section -->
+		<h1 class="main-about__title">
+			О нас
+		</h1>
+		<hr width="50px">
+		<h2 class="main-about__subtitle">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum?
+		</h2>
 
-		<section id="sectionAbout" class="main-about">
+		<div class="main-about__content">
 
-			<h1 class="main-about__title">
-				О нас
-			</h1>
-			<hr width="50px">
-			<h2 class="main-about__subtitle">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum?
-			</h2>
+			<div class="main-about__content__row-1">
 
-			<div class="main-about__content">
+				<!-- Left text -->
+				<p>V&K Dondenko - молодая и креативная пара
+					семейных фотографов из Киева, которая влюблена в свою работу. <br>
+					Мы выкладываемся по полной, чтобы наши клиенты сохранили яркие события
+					своей жизни в прекрасных фотографиях, наполненных любовью и красотой. <br>
+					Для этого мы не жалеем ни душевных, ни физических сил. Мы знаем, что такое начинать
+					с нуля, поэтому дорожим своей репутацией.</p>
 
-				<div class="main-about__content__row-1">
-
-					<!-- Left text -->
-					<p>V&K Dondenko - молодая и креативная пара
-						семейных фотографов из Киева, которая влюблена в свою работу. <br>
-						Мы выкладываемся по полной, чтобы наши клиенты сохранили яркие события
-						своей жизни в прекрасных фотографиях, наполненных любовью и красотой. <br>
-						Для этого мы не жалеем ни душевных, ни физических сил. Мы знаем, что такое начинать
-						с нуля, поэтому дорожим своей репутацией.</p>
-
-						<div class="main-about__content__ksuha__mob main-about__content__img">
-						<img src="./img/portfolio/1-375.jpg" alt="">
-						<div class="ksuha__info">
+					<div class="main-about__content__ksuha__mob main-about__content__img">
+					<img src="./img/portfolio/1-375.jpg" alt="">
+					<div class="ksuha__info">
+					<li>
+						<a href="#">
+						<i class="fa fa-facebook-square"></i>
+						</a>
+						</li>
 						<li>
-							<a href="#">
-							<i class="fa fa-facebook-square"></i>
-							</a>
-							</li>	
-							<li>
-							<a href="#">
-							<i class="fa fa-instagram"></i>
-							</a>
-							</li>	
-						</div>
+						<a href="#">
+						<i class="fa fa-instagram"></i>
+						</a>
+						</li>
 					</div>
-					
-					<!-- Right Text -->
-					<p>Наша задача - удивить и дать больше, чем вы ожидали, чтобы вы обращались
-					к нам снова и снова. Мы сами - родители замечательной доченьки, поэтому
-					постараемся найти общий язык с вашим малышом и сделаем так, чтобы его личико
-					на фотографиях украшала улыбка 🙂 Если вам понравился наш стиль - звоните, мы
-					подружимся ;) Мы с удовольствием проведем фотосессию вашей мечты: увидим Вашу
-					семью такой, какая она есть, подчеркнув Вашу уникальность, нежность и счастье.</p>
-
-				<!-- end about__content__row-1 -->
 				</div>
 
-				<div class="main-about__content__row-2">
+				<!-- Right Text -->
+				<p>Наша задача - удивить и дать больше, чем вы ожидали, чтобы вы обращались
+				к нам снова и снова. Мы сами - родители замечательной доченьки, поэтому
+				постараемся найти общий язык с вашим малышом и сделаем так, чтобы его личико
+				на фотографиях украшала улыбка 🙂 Если вам понравился наш стиль - звоните, мы
+				подружимся ;) Мы с удовольствием проведем фотосессию вашей мечты: увидим Вашу
+				семью такой, какая она есть, подчеркнув Вашу уникальность, нежность и счастье.</p>
 
-					<div class="main-about__content__ksuha main-about__content__img">
-						<img src="./img/portfolio/1-375.jpg" alt="">
-						<div class="ksuha__info">
+			<!-- end about__content__row-1 -->
+			</div>
+
+			<div class="main-about__content__row-2">
+
+				<div class="main-about__content__ksuha main-about__content__img">
+					<img src="./img/portfolio/1-375.jpg" alt="">
+					<div class="ksuha__info">
+					<li>
+						<a href="">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+
+					</div>
+				</div>
+				<!-- Kadabra -->
+				<div class="main-about__content__vasya main-about__content__img">
+					<img src="./img/portfolio/2-375.jpg" alt="">
+					<div class="vasya__info">
 						<li>
 							<a href="">
 								<i class="fa fa-facebook-square"></i>
 							</a>
-						</li>	
+						</li>
 						<li>
 							<a href="">
 								<i class="fa fa-instagram"></i>
 							</a>
-						</li>	
-					
-						</div>
+						</li>
 					</div>
-					<!-- Kadabra -->
-					<div class="main-about__content__vasya main-about__content__img">
-						<img src="./img/portfolio/2-375.jpg" alt="">
-						<div class="vasya__info">
-							<li>
-								<a href="">
-									<i class="fa fa-facebook-square"></i>
-								</a>
-							</li>	
-							<li>
-								<a href="">
-									<i class="fa fa-instagram"></i>
-								</a>
-							</li>	
-						</div>
-					</div>
-
 				</div>
-
-					<div class="main-about__content__vasya__mob main-about__content__img">
-					<img src="./img/portfolio/2-375.jpg" alt="">
-					<div class="ksuha__info">
-					<li>
-						<a href="#">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-						</li>	
-						<li>
-						<a href="#">
-							<i class="fa fa-instagram"></i>
-						</a>
-						</li>	
-						</div>
-					</div>
-
-		</div>
-
-		</section>
-	<!-- End of About Section -->
-
-	<!-- Portfolio Section -->
-
-		<section id="sectionPortfolio" class="main-portfolio">
-
-			<h1 class="main-portfolio__title">Наши работы</h1>
-			<hr width="50px">
-			<ul class="main-portfolio__menu">
-				<li class="main-portfolio__menu__item">Все</li>
-				<li class="main-portfolio__menu__item">Свадьбы</li>
-				<li class="main-portfolio__menu__item">Семейные</li>
-				<li class="main-portfolio__menu__item">Портреты</li>
-				<li class="main-portfolio__menu__item">Природа</li>
-			</ul>
-
-			<!-- portfolio__gallery -->
-
-			<div class="main-portfolio__gallery">
-				<ul id="lightgallery" class="portfolio__gallery">
-
-						<!-- #1  -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/1-375.jpg 375, ./img/portfolio/1-480.jpg 480, ./img/portfolio/1.jpg 800" data-src="./img/portfolio/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-1.jpg" alt="Thumb-1">
-								</a>
-						</li>
-
-						<!-- #2 -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/2-375.jpg 375, ./img/portfolio/2-480.jpg 480, ./img/portfolio/2.jpg 800" data-src="./img/portfolio/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-2.jpg" alt="Thumb-2">
-								</a>
-						</li>
-
-						<!-- #3 -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/3-375.jpg 375, ./img/portfolio/3-480.jpg 480, ./img/portfolio/3.jpg 800" data-src="./img/portfolio/3-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-3.jpg" alt="Thumb-3">
-								</a>
-						</li>
-
-						<!-- #4 -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/4-375.jpg 375, ./img/portfolio/4-480.jpg 480, ./img/portfolio/4.jpg 800" data-src="./img/portfolio/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-4.jpg" alt="Thumb-4">
-								</a>
-						</li>
-
-						<!-- #5 -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/5-375.jpg 375, ./img/portfolio/5-480.jpg 480, ./img/portfolio/5.jpg 800" data-src="./img/portfolio/5-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-5.jpg" alt="Thumb-5">
-								</a>
-						</li>
-
-						<!-- #6 -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/6-375.jpg 375, ./img/portfolio/6-480.jpg 480, ./img/portfolio/6.jpg 800" data-src="./img/portfolio/6-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-6.jpg" alt="Thumb-6">
-								</a>
-						</li>
-
-						<!-- #7  -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/7-375.jpg 375, ./img/portfolio/7-480.jpg 480, ./img/portfolio/7.jpg 800" data-src="./img/portfolio/7-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-7.jpg" alt="Thumb-7">
-								</a>
-						</li>
-
-						<!-- #8 -->
-						<li class="portfolio__gallery__item" data-responsive="./img/portfolio/8-375.jpg 375, ./img/portfolio/8-480.jpg 480, ./img/portfolio/8.jpg 800" data-src="./img/portfolio/8-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-8.jpg" alt="Thumb-8">
-								</a>
-						</li>
-
-						<!-- #9 -->
-						<li class="portfolio__gallery__item portfolio__gallery__item__last" data-responsive="./img/portfolio/9-375.jpg 375, ./img/portfolio/9-480.jpg 480, ./img/portfolio/9.jpg 800" data-src="./img/portfolio/9-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
-								<a href="">
-										<img class="img-responsive" src="./img/portfolio/thumb-9.jpg" alt="Thumb-3">
-								</a>
-						</li>
-
-				</ul>
 
 			</div>
 
-			<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+				<div class="main-about__content__vasya__mob main-about__content__img">
+				<img src="./img/portfolio/2-375.jpg" alt="">
+				<div class="ksuha__info">
+				<li>
+					<a href="#">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+					</a>
+					</li>
+					</div>
+				</div>
+
+	</div>
+
+	</section>
+<!-- End of About Section -->
+
+<!-- Portfolio Section -->
+
+	<section id="sectionPortfolio" class="main-portfolio">
+
+		<h1 class="main-portfolio__title">Наши работы</h1>
+		<hr width="50px">
+		<ul class="main-portfolio__menu">
+			<li class="main-portfolio__menu__item">Все</li>
+			<li class="main-portfolio__menu__item">Свадьбы</li>
+			<li class="main-portfolio__menu__item">Семейные</li>
+			<li class="main-portfolio__menu__item">Портреты</li>
+			<li class="main-portfolio__menu__item">Природа</li>
+		</ul>
+
+		<!-- portfolio__gallery -->
+
+		<div class="main-portfolio__gallery">
+			<ul id="lightgallery" class="portfolio__gallery">
+
+					<!-- #1  -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/1-375.jpg 375, ./img/portfolio/1-480.jpg 480, ./img/portfolio/1.jpg 800" data-src="./img/portfolio/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-1.jpg" alt="Thumb-1">
+							</a>
+					</li>
+
+					<!-- #2 -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/2-375.jpg 375, ./img/portfolio/2-480.jpg 480, ./img/portfolio/2.jpg 800" data-src="./img/portfolio/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-2.jpg" alt="Thumb-2">
+							</a>
+					</li>
+
+					<!-- #3 -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/3-375.jpg 375, ./img/portfolio/3-480.jpg 480, ./img/portfolio/3.jpg 800" data-src="./img/portfolio/3-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-3.jpg" alt="Thumb-3">
+							</a>
+					</li>
+
+					<!-- #4 -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/4-375.jpg 375, ./img/portfolio/4-480.jpg 480, ./img/portfolio/4.jpg 800" data-src="./img/portfolio/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-4.jpg" alt="Thumb-4">
+							</a>
+					</li>
+
+					<!-- #5 -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/5-375.jpg 375, ./img/portfolio/5-480.jpg 480, ./img/portfolio/5.jpg 800" data-src="./img/portfolio/5-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-5.jpg" alt="Thumb-5">
+							</a>
+					</li>
+
+					<!-- #6 -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/6-375.jpg 375, ./img/portfolio/6-480.jpg 480, ./img/portfolio/6.jpg 800" data-src="./img/portfolio/6-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-6.jpg" alt="Thumb-6">
+							</a>
+					</li>
+
+					<!-- #7  -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/7-375.jpg 375, ./img/portfolio/7-480.jpg 480, ./img/portfolio/7.jpg 800" data-src="./img/portfolio/7-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>. Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-7.jpg" alt="Thumb-7">
+							</a>
+					</li>
+
+					<!-- #8 -->
+					<li class="portfolio__gallery__item" data-responsive="./img/portfolio/8-375.jpg 375, ./img/portfolio/8-480.jpg 480, ./img/portfolio/8.jpg 800" data-src="./img/portfolio/8-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla bla bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-8.jpg" alt="Thumb-8">
+							</a>
+					</li>
+
+					<!-- #9 -->
+					<li class="portfolio__gallery__item portfolio__gallery__item__last" data-responsive="./img/portfolio/9-375.jpg 375, ./img/portfolio/9-480.jpg 480, ./img/portfolio/9.jpg 800" data-src="./img/portfolio/9-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>Bla Bla Bla</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+							<a href="">
+									<img class="img-responsive" src="./img/portfolio/thumb-9.jpg" alt="Thumb-3">
+							</a>
+					</li>
+
+			</ul>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
@@ -297,91 +294,92 @@
             lightGallery(document.getElementById('lightgallery'));
         </script>
 
-				<!-- END of portfolio gallery -->
+			<!-- END of portfolio gallery -->
 
-	</section>
+</section>
 
 
-	<!-- Contact Form Section -->
-	<section id="sectionForm" class="main-contacts">
-		<div class="contacts-wrapper">
-		<h1 class="main-contacts__title pt">Заказать фотосъемку</h1>
+<!-- Contact Form Section -->
+<section id="sectionForm" class="main-contacts">
+	<div class="contacts-wrapper">
+	<h1 class="main-contacts__title pt">Заказать фотосъемку</h1>
 
-		<hr width="50px">
+	<hr width="50px">
 
-		<h2 class="main-contacts__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+	<h2 class="main-contacts__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 
-		<div class="main-contacts-content">
+	<div class="main-contacts-content">
 
-			<div class="contacts-content__left">
+		<div class="contacts-content__left">
 
-			<ul class="contacts-content__list">
+		<ul class="contacts-content__list">
 
-				<li class="content__list__item">
-					<h2>Адрес</h2>
-				</li>
-				<li class="content__list__item">
-					<h2>Телефон</h2>
-				</li>
-				<li class="content__list__item">
-					<h2>Почта</h2>
+			<li class="content__list__item">
+				<h2>Адрес</h2>
+			</li>
+			<li class="content__list__item">
+				<h2>Телефон</h2>
+			</li>
+			<li class="content__list__item">
+				<h2>Почта</h2>
 
-				</li>
-			</ul>
-			</div>
-
-			<!-- Form -->
-			<div class="contacts-content__right pb">
-
-				<form class="contacts__form" method="post" action="./send.php">
-
-					<div class="contact__form__top">
-						<input name="Name" placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input">
-						<input name="Number" placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input">
-						<input name="Email" placeholder="Почта (по желанию)" id="inputEmail" type="text" class="contact__form__item regular__input">
-						<input name="Date" placeholder="Выберете дату" id="inputDate" type="date" min="2018-05-01" class="contact__form__item regular__input">
-					</div>
-
-					<div class="contact__form__bottom">
-						<textarea id="inputText" placeholder="Ваше сообщение" name="Text Input" class="contact__form__item regular__input"></textarea>
-						<button id="sendButton" class="form__button">Отправить</button>
-						<p id="alertMessage" class="alert_message">Заполните поля помеченные красным цветом</p>
-					</div>
-
-				</form>
-			</div>
+			</li>
+		</ul>
 		</div>
 
+		<!-- Form -->
+		<div class="contacts-content__right pb">
+
+			<form class="contacts__form" id="form">
+
+				<div class="contact__form__top">
+					<input name="name" placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input">
+					<input name="phone" placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input">
+					<input name="email" placeholder="Почта (по желанию)" id="inputEmail" type="text" class="contact__form__item regular__input">
+					<input name="date" placeholder="Выберете дату" id="inputDate" type="date" min="2018-05-01" class="contact__form__item regular__input">
+				</div>
+
+				<div class="contact__form__bottom">
+					<textarea name="text" id="inputText" placeholder="Ваше сообщение" class="contact__form__item regular__input"></textarea>
+					<button id="sendButton" class="form__button">Отправить</button>
+					<p id="alertMessage" class="alert_message">Заполните поля помеченные красным цветом</p>
+				</div>
+
+			</form>
+		</div>
 	</div>
 
-	<!-- Enf of Div Contacts Wrapper -->
+</div>
 
-	</section>
-	<!-- End of Main Contacts Section -->
+<!-- Enf of Div Contacts Wrapper -->
 
-	</main>
+</section>
+<!-- End of Main Contacts Section -->
 
-	<!-- End of Main -->
+</main>
 
-	<!-- Footer -->
+<!-- End of Main -->
 
-	<footer>
+<!-- Footer -->
 
-			<ul class="footer-social">
-				<a href="https://www.facebook.com/vk.dondenko/" target="_blank"><li><i class="fa fa-facebook-square"></i></li></a>
-				<a href="https://www.instagram.com/vk_dondenko/" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
-				<a href=""><li><i class="fa fa-flickr"></i></li></a>
-				<a href=""><li><i class="fa fa-pinterest"></i></li></a>
-			</ul>
-			<hr class="footer-hr" width="50px">
-			<p>2018 V&K Dondenko. All right reserved</p>
+<footer>
 
-	</footer>
+		<ul class="footer-social">
+			<a href="https://www.facebook.com/vk.dondenko/" target="_blank"><li><i class="fa fa-facebook-square"></i></li></a>
+			<a href="https://www.instagram.com/vk_dondenko/" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
+			<a href=""><li><i class="fa fa-flickr"></i></li></a>
+			<a href=""><li><i class="fa fa-pinterest"></i></li></a>
+		</ul>
+		<hr class="footer-hr" width="50px">
+		<p>2018 V&K Dondenko. All right reserved</p>
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</footer>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+
 <script src="./js/script.js"></script>
-
-</body>
+ <!-- <script src="./js/common.js"></script> -->
 
 </script>
 </html>
