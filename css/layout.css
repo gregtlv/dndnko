@@ -183,7 +183,7 @@ body {
     .header-content__button:hover {
       background: #fff;
       color: #c0301c;
-      /* animation: scaleAnimation 3s infinite; */
+      animation: scaleAnimation 3s 1;
     }
 
 /* Main */
