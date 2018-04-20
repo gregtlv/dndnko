@@ -862,7 +862,7 @@ footer {
         }
         .contact__form__bottom {
           margin: auto;
-          width: 100%;
+          width: 63.5%;
         }
 
         .contacts__form textarea {
@@ -930,7 +930,10 @@ footer {
         width: 100%;
         /* display: none; */
       }
-
+      .contact__form__bottom {
+        margin: auto;
+        width: 63.5%;
+      }
       /* end of contact form */
 /* end 320 and 360 */
 }
