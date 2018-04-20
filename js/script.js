@@ -51,7 +51,7 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 	var userName = document.getElementById('inputName');
 	var userNumber = document.getElementById('inputPhone');
 	// var userMail = document.getElementById('inputEmail');
-	var userDate = document.getElementById('inputDate');
+	// var userDate = document.getElementById('inputDate');
 	var userText = document.getElementById('inputText');
 
 	var alertMessage = document.getElementById('alertMessage');
@@ -61,7 +61,7 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 	let userName_Class = userName.classList;
 	let userNumber_Class = userNumber.classList;
 	// let userMail_Class = userMail.classList;
-	let userDate_Class = userDate.classList;
+	// let userDate_Class = userDate.classList;
 	let userText_Class = userText.classList;
 
 	let alertMessage_Class = alertMessage.classList;
@@ -103,15 +103,15 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 
 
 
-	if (userDate.value == "") {
-		userDate_Class.remove("regular__input");
-		userDate_Class.add("red__input");
-
-	}
-	else {
-		userDate_Class.remove("red__input");
-
-	}
+	// if (userDate.value == "") {
+	// 	userDate_Class.remove("regular__input");
+	// 	userDate_Class.add("red__input");
+  //
+	// }
+	// else {
+	// 	userDate_Class.remove("red__input");
+  //
+	// }
 
 	// Text Message
 
@@ -128,12 +128,12 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 
 
 	console.log(userName.classList);
-	console.log(userMail.classList);
-	console.log(userDate.classList);
+	// console.log(userMail.classList);
+	// console.log(userDate.classList);
 	console.log(userText.classList);
 
-// && userMail.value != "" 
-	if (userName.value != "" && userNumber.value != "" && userDate.value != "" && userText.value != "") {
+// && userMail.value != ""
+	if (userName.value != "" && userNumber.value != "" && userText.value != "") {
 		// form.style.display = "none";
 		// classNamesForm.remove("form");
 
