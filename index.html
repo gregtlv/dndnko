@@ -302,45 +302,32 @@
 <!-- Contact Form Section -->
 <section id="sectionForm" class="main-contacts">
 	<div class="contacts-wrapper">
-	<h1 class="main-contacts__title pt">Заказать фотосъемку</h1>
+	<h1 class="main-contacts__title pt">Записаться к нам :-)</h1>
 
 	<hr width="50px">
 
-	<h2 class="main-contacts__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+	<h2 class="main-contacts__subtitle">Или просто спросить вопрос.</h2>
 
 	<div class="main-contacts-content">
-
-		<div class="contacts-content__left">
-
-		<ul class="contacts-content__list">
-
-			<li class="content__list__item">
-				<h2>Адрес</h2>
-			</li>
-			<li class="content__list__item">
-				<h2>Телефон</h2>
-			</li>
-			<li class="content__list__item">
-				<h2>Почта</h2>
-
-			</li>
-		</ul>
-		</div>
 
 		<!-- Form -->
 		<div class="contacts-content__right pb">
 
 			<form class="contacts__form" id="form">
-
+				<style media="screen">
+				input[type='number'] { -moz-appearance:textfield }
+				input::-webkit-outer-spin-button,
+				input::-webkit-inner-spin-button { -webkit-appearance: none; }
+				</style>
 				<div class="contact__form__top">
-					<input name="name" placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input">
-					<input name="phone" placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input">
-					<input name="email" placeholder="Почта (по желанию)" id="inputEmail" type="text" class="contact__form__item regular__input">
-					<input name="date" placeholder="Выберете дату" id="inputDate" type="date" min="2018-05-01" class="contact__form__item regular__input">
+					<input name="name" placeholder="Ваше имя" id="inputName" type="text" class="contact__form__item regular__input" required>
+					<input name="phone" placeholder="Ваш номер телефона" id="inputPhone" type="number" class="contact__form__item regular__input" required>
+					<input name="email" placeholder="Почта (по желанию)" id="inputEmail" type="email" class="contact__form__item regular__input">
+					<input onfocus="(this.type='date')" name="date" placeholder="Выберете дату" id="inputDate" type="text" min="2018-05-01" class="contact__form__item regular__input">
 				</div>
 
 				<div class="contact__form__bottom">
-					<textarea name="text" id="inputText" placeholder="Ваше сообщение" class="contact__form__item regular__input"></textarea>
+					<textarea name="text" id="inputText" placeholder="Ваше сообщение" class="contact__form__item__text regular__input"></textarea>
 					<button id="sendButton" class="form__button">Отправить</button>
 					<p id="alertMessage" class="alert_message">Заполните поля помеченные красным цветом</p>
 				</div>
