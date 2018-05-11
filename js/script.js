@@ -72,10 +72,12 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 	// var userMail = document.getElementById('inputEmail');
 	// var userDate = document.getElementById('inputDate');
 	var userText = document.getElementById('inputText');
-
+	
+    var contactForm = document.getElementById('sectionForm');
+    
 	var alertMessage = document.getElementById('alertMessage');
 
-
+    var Button = document.getElementById('sendButton');
 
 	let userName_Class = userName.classList;
 	let userNumber_Class = userNumber.classList;
@@ -156,18 +158,19 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 		// form.style.display = "none";
 		// classNamesForm.remove("form");
 
-
+        Button.style.display = "none";
         console.log('Form sent');
 
         $(function() {
         $.ajax({
         type: "POST",
-        url: "mail.php",
-        data: $(this).serialize()
+        url: "./js/mail.php",
+        data: $("form").serialize()
       }).done(function() {
-        $(this).find("input").val("");
-        alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+        $("#form").find("input").val("");
         $("#form").trigger("reset");
+        contactForm.style.display = "none";
+        alert("Спасибо за заявку! Скоро мы с вами свяжемся.__");
       });
       return false;
     });
