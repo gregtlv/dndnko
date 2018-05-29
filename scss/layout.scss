@@ -867,13 +867,34 @@ footer {
   }
 
   /* ABOUT US */
-  .main-about__content {
 
+
+  .main-about__content {
+    width: 100%;
   }
-  
+
   .about__content__row {
+    margin: 0 auto;
     flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 90%;
+    img {
+      width: 90%;
+    }
   }
+  .about__content__row_2 {
+    justify-content: center;
+  }
+
+  .about__content_row_2 p,
+  .about__content_row_1 p {
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
 
   /* END OF ABOUT US  */
 
