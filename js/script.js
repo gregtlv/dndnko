@@ -72,9 +72,9 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 	// var userMail = document.getElementById('inputEmail');
 	// var userDate = document.getElementById('inputDate');
 	var userText = document.getElementById('inputText');
-	
+
     var contactForm = document.getElementById('sectionForm');
-    
+
 	var alertMessage = document.getElementById('alertMessage');
 
     var Button = document.getElementById('sendButton');
